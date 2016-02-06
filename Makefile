@@ -10,7 +10,7 @@ export MAKE
 export TARGET
 
 all:
-	mkdir build # Prevents a weird error
+	mkdir -p build # Prevents a weird error
 	$(MAKE) -C src
 
 	###################
