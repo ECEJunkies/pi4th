@@ -7,4 +7,4 @@ all: ${SRCS} link
 
 # apply make TARGET=qemu to build for qemu :)
 link:
-	$(CC) -T ../scripts/${TARGET}.ld -o ../build/kernel.elf ${LDFLAGS} ${SRCS}
+	$(LD) -T ../scripts/${TARGET}.ld -o ../build/kernel.elf ${LDFLAGS} ${SRCS}
