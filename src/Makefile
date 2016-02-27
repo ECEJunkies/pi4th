@@ -1,5 +1,6 @@
 ASFLAGS += -mcpu=arm1176jzf-s
-SRCS     = entry.o
+CFLAGS  += -mcpu=arm1176jzf-s -fpic -ffreestanding -std=gnu99 -Wall -Wextra -pedantic -Werror
+SRCS     = entry.o uart.o util.o
 LD       = ${CC} # We can just use the gnu C compiler for this.. usually.
 LDFLAGS  = -ffreestanding -O2 -nostdlib
 
