@@ -1,0 +1,3 @@
+I need a way to find specific parts of the bpb and the boot sector
+	structure of elements in bpb and the boot sector:
+		name, offset, size: for the perpose od reading and writing to those relitive locations on the media
